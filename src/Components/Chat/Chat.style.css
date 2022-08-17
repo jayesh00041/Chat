@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  font-family: "Quicksand", sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: 100vh;
+}
+.aside-chat {
+  background-color: #f5f7fb;
+}
+.chat-window {
+  background-color: white;
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+}
+/* chat header css */
+.chat-header {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  border-bottom: 1px solid lightgray;
+  gap: 1rem;
+  padding: 1rem;
+}
+.chat-header > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.chat-header > div:nth-child(2) {
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+/* messages components */
+
+.messages {
+  width: 100%;
+  padding: 1rem;
+}
+
+.received {
+  display: flex;
+  justify-content: flex-start;
+}
+.msg-body {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 0.2rem 1rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  background-color: #f5f7fb;
+  width: fit-content;
+  max-width: 50%;
+}
+.msg-body > p {
+  color: #b5b5b5;
+  text-align: right;
+  font-size: 0.75rem;
+}
+.msg-sender {
+  display: inline;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  text-align: left;
+}
+.msg-sender > span {
+  position: relative;
+  left: -2rem;
+  top: -1.25rem;
+}
+
+/* sent msg  */
+.sent {
+  display: flex;
+  justify-content: flex-end;
+}
+.sent .msg-sender {
+}
